@@ -1,0 +1,892 @@
+{
+    "RefreshRate": 5000,
+    "IsDark": false,
+    "DisplayHero": "none",
+    "IoTAPIQuery": "/WarmQuery?",
+    "IoTEmulated": "false",
+    "IoTPages": "&page=1&pageSize=200",
+    "IoTAPIRoot": "/api/iot",
+    "DefaultChartPrefs": [
+        {
+            "Mode": "Light",
+            "ChartType": "Line",
+            "BackgroundColor": "rgb(0, 0, 0, 0.4)",
+            "BorderColor": "rgb(0, 0, 0, 0.4)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "grid": {
+                            "color": "rgb(0, 0, 0, 0.1)"
+                        }
+                    },
+                    "x": {
+                        "grid": {
+                            "color": "rgb(0, 0, 0, 0.1)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "Mode": "Dark",
+            "ChartType": "Line",
+            "BackgroundColor": "rgb(255, 255, 255, 0.4)",
+            "BorderColor": "rgb(255, 255, 255, 0.4)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "grid": {
+                            "color": "rgb(255, 255, 255, 0.1)"
+                        }
+                    },
+                    "x": {
+                        "grid": {
+                            "color": "rgb(255, 255, 255, 0.1)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "Mode": "Light",
+            "ChartType": "Bar",
+            "BackgroundColor": "rgb(0, 0, 0, 0.4)",
+            "BorderColor": "rgb(0, 0, 0, 0.4)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "grid": {
+                            "color": "rgb(0, 0, 0, 0.1)"
+                        }
+                    },
+                    "x": {
+                        "grid": {
+                            "color": "rgb(0, 0, 0, 0.1)"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "Mode": "Dark",
+            "ChartType": "Bar",
+            "BackgroundColor": "rgb(255, 255, 255, 0.4)",
+            "BorderColor": "rgb(255, 255, 255, 0.4)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "grid": {
+                            "color": "rgb(255, 255, 255, 0.1)"
+                        }
+                    },
+                    "x": {
+                        "grid": {
+                            "color": "rgb(255, 255, 255, 0.1)"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "ChartPrefs": [
+        {
+            "Name": "AX",
+            "ChartType": "Line",
+            "DisplayUnits": "X m/s²",
+            "DisplayCurrent": true,
+            "Icons": [
+                "rocket"
+            ],
+            "IconColors": [
+                "red"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(180, 0, 0)",
+            "BorderColor": "rgb(180, 0, 0)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "AY",
+            "ChartType": "Line",
+            "DisplayUnits": "Y m/s²",
+            "DisplayCurrent": true,
+            "Icons": [
+                "rocket"
+            ],
+            "IconColors": [
+                "red"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(180, 0, 0)",
+            "BorderColor": "rgb(180, 0, 0)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "AZ",
+            "ChartType": "Line",
+            "DisplayUnits": "Z m/s²",
+            "DisplayCurrent": true,
+            "Icons": [
+                "rocket"
+            ],
+            "IconColors": [
+                "red"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(180, 0, 0)",
+            "BorderColor": "rgb(180, 0, 0)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "GX",
+            "ChartType": "Line",
+            "DisplayUnits": "X",
+            "DisplayCurrent": true,
+            "Icons": [
+                "rotate3d"
+            ],
+            "IconColors": [
+                "blue"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(0, 0, 180)",
+            "BorderColor": "rgb(0, 0, 180)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "GY",
+            "ChartType": "Line",
+            "DisplayUnits": "Y",
+            "DisplayCurrent": true,
+            "Icons": [
+                "rotate3d"
+            ],
+            "IconColors": [
+                "blue"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(0, 0, 180)",
+            "BorderColor": "rgb(0, 0, 180)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "GZ",
+            "ChartType": "Line",
+            "DisplayUnits": "Z",
+            "DisplayCurrent": true,
+            "Icons": [
+                "rotate3d"
+            ],
+            "IconColors": [
+                "blue"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(0, 0, 180)",
+            "BorderColor": "rgb(0, 0, 180)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "MX",
+            "ChartType": "Line",
+            "DisplayUnits": "X",
+            "DisplayCurrent": true,
+            "Icons": [
+                "magnet"
+            ],
+            "IconColors": [
+                "blue"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(0, 0, 180)",
+            "BorderColor": "rgb(0, 0, 180)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "MY",
+            "ChartType": "Line",
+            "DisplayUnits": "Y",
+            "DisplayCurrent": true,
+            "Icons": [
+                "magnet"
+            ],
+            "IconColors": [
+                "blue"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(0, 0, 180)",
+            "BorderColor": "rgb(0, 0, 180)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "MZ",
+            "ChartType": "Line",
+            "DisplayUnits": "Z",
+            "DisplayCurrent": true,
+            "Icons": [
+                "magnet"
+            ],
+            "IconColors": [
+                "blue"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(0, 0, 180)",
+            "BorderColor": "rgb(0, 0, 180)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "EA",
+            "ChartType": "Line",
+            "DisplayUnits": "EDA",
+            "DisplayCurrent": true,
+            "Icons": [
+                "finger"
+            ],
+            "IconColors": [
+                "green"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(0, 180, 0)",
+            "BorderColor": "rgb(0, 180, 0)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "EL",
+            "ChartType": "Line",
+            "DisplayUnits": "EDL",
+            "DisplayCurrent": true,
+            "Icons": [
+                "finger"
+            ],
+            "IconColors": [
+                "green"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(0, 180, 0)",
+            "BorderColor": "rgb(0, 180, 0)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "ER",
+            "ChartType": "Line",
+            "DisplayUnits": "EDR",
+            "DisplayCurrent": true,
+            "Icons": [
+                "finger"
+            ],
+            "IconColors": [
+                "green"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(0, 180, 0)",
+            "BorderColor": "rgb(0, 180, 0)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "H0",
+            "ChartType": "Line",
+            "DisplayUnits": "%",
+            "DisplayCurrent": true,
+            "Icons": [
+                "water"
+            ],
+            "IconColors": [
+                "lightblue"
+            ],
+            "IconSize": [
+                "2em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(120, 120, 120)",
+            "BorderColor": "rgb(120, 120, 120)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "T0",
+            "ChartType": "Line",
+            "DisplayUnits": "°C",
+            "DisplayCurrent": true,
+            "Icons": [
+                "temperature"
+            ],
+            "IconColors": [
+                "red"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(240, 0, 0)",
+            "BorderColor": "rgb(240, 0, 0)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "TH",
+            "ChartType": "Line",
+            "DisplayUnits": "°C",
+            "DisplayCurrent": true,
+            "Icons": [
+                "temperature"
+            ],
+            "IconColors": [
+                "red"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(240, 0, 0)",
+            "BorderColor": "rgb(240, 0, 0)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "PI",
+            "ChartType": "Line",
+            "DisplayUnits": "PPG INFRARED",
+            "DisplayCurrent": true,
+            "Icons": [
+                "heartmonitor"
+            ],
+            "IconColors": [
+                "red"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(180, 0, 0)",
+            "BorderColor": "rgb(180, 0, 0)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "PR",
+            "ChartType": "Line",
+            "DisplayUnits": "PPG RED",
+            "DisplayCurrent": true,
+            "Icons": [
+                "heart"
+            ],
+            "IconColors": [
+                "red"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(240, 0, 0)",
+            "BorderColor": "rgb(240, 0, 0)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "PG",
+            "ChartType": "Line",
+            "DisplayUnits": "PPG GREEN",
+            "DisplayCurrent": true,
+            "Icons": [
+                "heart"
+            ],
+            "IconColors": [
+                "green"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(0, 240, 0)",
+            "BorderColor": "rgb(0, 240, 0)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "BV",
+            "ChartType": "Line",
+            "DisplayUnits": "volts",
+            "DisplayCurrent": true,
+            "ConvertUnits": "roundToHund",
+            "Icons": [
+                "batteryvoltage"
+            ],
+            "IconColors": [
+                "Green"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(120, 120, 120)",
+            "BorderColor": "rgb(120, 120, 120)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": true
+                    }
+                }
+            }
+        },
+        {
+            "Name": "BP",
+            "ChartType": "Line",
+            "DisplayUnits": "%",
+            "DisplayCurrent": true,
+            "ConvertUnits": "roundToHund",
+            "Icons": [
+                "batteryempty",
+                "battery15full",
+                "battery30full",
+                "battery45full",
+                "battery60full",
+                "battery75full",
+                "battery90full",
+                "batteryfull"
+            ],
+            "IconColors": [
+                "Red",
+                "Red",
+                "Orange",
+                "Orange",
+                "Green",
+                "Green",
+                "Green",
+                "Green"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0,
+                15,
+                30,
+                45,
+                60,
+                75,
+                90,
+                100
+            ],
+            "BackgroundColor": "rgb(120, 120, 120)",
+            "BorderColor": "rgb(120, 120, 120)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": true
+                    }
+                }
+            }
+        },
+        {
+            "Name": "1",
+            "ChartType": "Line",
+            "DisplayUnits": "(µV)",
+            "DisplayCurrent": true,
+            "ConvertUnits": "roundToHund",
+            "Icons": [
+                "braincircuit"
+            ],
+            "IconColors": [
+                "#818181"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(129, 129, 129)",
+            "BorderColor": "rgb(129, 129, 129)",
+            "Tension": 0,
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "2",
+            "ChartType": "Line",
+            "DisplayUnits": "(µV)",
+            "DisplayCurrent": true,
+            "ConvertUnits": "roundToHund",
+            "Icons": [
+                "braincircuit"
+            ],
+            "IconColors": [
+                "#7C4B8D"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(124, 75, 141)",
+            "BorderColor": "rgb(124, 75, 141)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "3",
+            "ChartType": "Line",
+            "DisplayUnits": "(µV)",
+            "DisplayCurrent": true,
+            "ConvertUnits": "roundToHund",
+            "Icons": [
+                "braincircuit"
+            ],
+            "IconColors": [
+                "#36579E"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(54, 87, 158)",
+            "BorderColor": "rgb(54, 87, 158)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "4",
+            "ChartType": "Line",
+            "DisplayUnits": "(µV)",
+            "DisplayCurrent": true,
+            "ConvertUnits": "roundToHund",
+            "Icons": [
+                "braincircuit"
+            ],
+            "IconColors": [
+                "#317159"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(49, 113, 89)",
+            "BorderColor": "rgb(49, 113, 89)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "5",
+            "ChartType": "Line",
+            "DisplayUnits": "(µV)",
+            "DisplayCurrent": true,
+            "ConvertUnits": "roundToHund",
+            "Icons": [
+                "braincircuit"
+            ],
+            "IconColors": [
+                "#DDB20D"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(221, 178, 13)",
+            "BorderColor": "rgb(221, 178, 13)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "6",
+            "ChartType": "Line",
+            "DisplayUnits": "(µV)",
+            "DisplayCurrent": true,
+            "ConvertUnits": "roundToHund",
+            "Icons": [
+                "braincircuit"
+            ],
+            "IconColors": [
+                "#FD5E34"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(253, 94, 52)",
+            "BorderColor": "rgb(253, 94, 52)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "7",
+            "ChartType": "Line",
+            "DisplayUnits": "(µV)",
+            "DisplayCurrent": true,
+            "ConvertUnits": "roundToHund",
+            "Icons": [
+                "braincircuit"
+            ],
+            "IconColors": [
+                "#E0382D"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(224, 56, 45)",
+            "BorderColor": "rgb(224, 56, 45)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        },
+        {
+            "Name": "8",
+            "ChartType": "Line",
+            "DisplayUnits": "(µV)",
+            "DisplayCurrent": true,
+            "ConvertUnits": "roundToHund",
+            "Icons": [
+                "braincircuit"
+            ],
+            "IconColors": [
+                "#A25231"
+            ],
+            "IconSize": [
+                "3em"
+            ],
+            "IconValues": [
+                0
+            ],
+            "BackgroundColor": "rgb(162, 82, 49)",
+            "BorderColor": "rgb(162, 82, 49)",
+            "Options": {
+                "scales": {
+                    "y": {
+                        "beginAtZero": false
+                    }
+                }
+            }
+        }
+    ],
+    "HeroPrefs": [
+        {
+            "Name": "Device",
+            "StringName": "word",
+            "BooleanName": true,
+            "Background": [
+                "Chip",
+                "ChipSmall"
+            ]
+        }
+    ]
+}
